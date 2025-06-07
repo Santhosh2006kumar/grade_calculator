@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo</title>
+</head>
+<body>
+    <input class="in1" placeholder="enter grade" />
+    <select id="se1">
+        <option value="1">1</option>
+        <option value="2">2</option>
+    </select><br><br>
+    <button id="bt1">SUBMIT</button>
+</body>
+<script>
+    
+    let b=document.getElementById('bt1');
+    b.addEventListener('click', ddk);
+    function ddk(){
+        let i=document.getElementsByClassName('in1');
+        let s=document.getElementById('se1');
+        console.log(i[0].value,s.value);
+    }
+</script>
+</html>
